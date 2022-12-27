@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-go@v3
 
     - name: Build
-      run: go build -o /tmp/dmut -v ./...
+      run: mkdir /tmp/dmut/ && go build -o /tmp/dmut -v ./...
     # Create release
     - name: Generate release tag
       id: tag
